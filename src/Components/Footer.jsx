@@ -116,7 +116,7 @@ const Footer = (props) => {
         )}
         {hashNode && (
           <a
-            href={`https://www.hashnode.com/c/${hashNode}`}
+            href={`https://www.hashnode.com/@${hashNode}`}
             target="_blank"
             rel="noopener noreferrer"
           >
