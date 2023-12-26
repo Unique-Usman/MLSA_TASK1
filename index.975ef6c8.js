@@ -27077,6 +27077,8 @@ var _home = require("./Components/Home");
 var _homeDefault = parcelHelpers.interopDefault(_home);
 var _portfolio = require("./Components/Portfolio");
 var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
+var _education = require("./Components/Education");
+var _educationDefault = parcelHelpers.interopDefault(_education);
 var _stylesCss = require("./styles.css");
 /**
  * This object represents your information. The project is set so that you
@@ -27095,17 +27097,39 @@ var _stylesCss = require("./styles.css");
     linkedIn: "usman-akinyemi-1689711b3/",
     medium: "",
     twitter: "usman_akinyemi",
-    youTube: "usmanakinyemi6054"
+    youTube: "usmanakinyemi6054",
+    hashNode: "UniqueUsman"
 };
 const primaryColor = "#4E567E";
 const secondaryColor = "#D2F1E4";
+const educationDetails = [
+    {
+        name: "Plaksha University",
+        degree: "Bachelor of Technology",
+        fieldOfStudy: "Computer Science and Artificial Intelligence",
+        year: "2022-2026"
+    },
+    {
+        name: "University of People",
+        degree: "Bachelor of Science",
+        fieldOfStudy: "Computer Science",
+        year: "2021-2026"
+    },
+    // Add more educational institutions as needed
+    {
+        name: "ALX Africa",
+        degree: "Diploma",
+        fieldOfStudy: "Software Engineering",
+        year: "2022-2024"
+    }, 
+];
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "main",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 44,
+                lineNumber: 68,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {
@@ -27113,17 +27137,24 @@ const App = ()=>{
                 title: siteProps.title
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 45,
+                lineNumber: 69,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _educationDefault.default), {
+                institutions: educationDetails
+            }, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 46,
+                lineNumber: 71,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 47,
+                lineNumber: 72,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
@@ -27132,13 +27163,13 @@ const App = ()=>{
                 secondaryColor: secondaryColor
             }, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 48,
+                lineNumber: 73,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 43,
+        lineNumber: 67,
         columnNumber: 5
     }, undefined);
 };
@@ -27152,7 +27183,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kouZu":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Components/About":"kouZu","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/Education":"6QZcy"}],"kouZu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$17a8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27528,13 +27559,15 @@ var _twitterSvg = require("../images/socials/twitter.svg");
 var _twitterSvgDefault = parcelHelpers.interopDefault(_twitterSvg);
 var _youtubeSvg = require("../images/socials/youtube.svg");
 var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
-/**
+var _hashnodePng = require("../images/socials/hashnode.png");
+var _hashnodePngDefault = parcelHelpers.interopDefault(_hashnodePng);
+/** 
  * 💡 Learning resources
  *
  *  HTML hyperlinks: https://www.w3schools.com/html/html_links.asp
  *  Opening links in new tabs: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
  */ const Footer = (props)=>{
-    const { devDotTo , email , gitHub , instagram , linkedIn , medium , name , primaryColor , twitter , youTube ,  } = props;
+    const { devDotTo , email , gitHub , instagram , linkedIn , medium , name , primaryColor , twitter , youTube , hashNode ,  } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "footer",
         style: {
@@ -27562,12 +27595,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 65,
+                            lineNumber: 67,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 64,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, undefined),
                     devDotTo && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27580,12 +27613,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 70,
+                            lineNumber: 72,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 69,
+                        lineNumber: 71,
                         columnNumber: 11
                     }, undefined),
                     gitHub && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27598,12 +27631,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 75,
+                            lineNumber: 77,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 74,
+                        lineNumber: 76,
                         columnNumber: 11
                     }, undefined),
                     instagram && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27616,12 +27649,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 84,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 79,
+                        lineNumber: 81,
                         columnNumber: 11
                     }, undefined),
                     linkedIn && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27634,12 +27667,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 93,
+                            lineNumber: 95,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 88,
+                        lineNumber: 90,
                         columnNumber: 11
                     }, undefined),
                     medium && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27652,12 +27685,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 98,
+                            lineNumber: 100,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 97,
+                        lineNumber: 99,
                         columnNumber: 11
                     }, undefined),
                     twitter && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27670,12 +27703,12 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 103,
+                            lineNumber: 105,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 102,
+                        lineNumber: 104,
                         columnNumber: 11
                     }, undefined),
                     youTube && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -27688,18 +27721,36 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                             className: "socialIcon"
                         }, void 0, false, {
                             fileName: "src/Components/Footer.jsx",
-                            lineNumber: 112,
+                            lineNumber: 114,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Footer.jsx",
-                        lineNumber: 107,
+                        lineNumber: 109,
+                        columnNumber: 11
+                    }, undefined),
+                    hashNode && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: `https://www.hashnode.com/@${hashNode}`,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: (0, _hashnodePngDefault.default),
+                            alt: "HashNode",
+                            className: "socialIcon"
+                        }, void 0, false, {
+                            fileName: "src/Components/Footer.jsx",
+                            lineNumber: 123,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Components/Footer.jsx",
+                        lineNumber: 118,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 56,
+                lineNumber: 58,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27714,13 +27765,13 @@ var _youtubeSvgDefault = parcelHelpers.interopDefault(_youtubeSvg);
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Footer.jsx",
-                lineNumber: 116,
+                lineNumber: 127,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Footer.jsx",
-        lineNumber: 44,
+        lineNumber: 46,
         columnNumber: 5
     }, undefined);
 };
@@ -27749,7 +27800,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/devdotto.svg":"69cpV","../images/socials/envelope.svg":"92UhI","../images/socials/github.svg":"vP2m6","../images/socials/instagram.svg":"jH0VA","../images/socials/linkedin.svg":"5XSmz","../images/socials/medium.svg":"cDDa0","../images/socials/twitter.svg":"flM6L","../images/socials/youtube.svg":"hmN7D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","prop-types":"7wKI2","../images/socials/devdotto.svg":"69cpV","../images/socials/envelope.svg":"92UhI","../images/socials/github.svg":"vP2m6","../images/socials/instagram.svg":"jH0VA","../images/socials/linkedin.svg":"5XSmz","../images/socials/medium.svg":"cDDa0","../images/socials/twitter.svg":"flM6L","../images/socials/youtube.svg":"hmN7D","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/socials/hashnode.png":"ebj2U"}],"7wKI2":[function(require,module,exports) {
 var ReactIs = require("react-is");
 // By explicitly using `prop-types` you are opting into new development behavior.
 // http://fb.me/prop-types-in-prod
@@ -28514,6 +28565,9 @@ module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "twitte
 },{"./helpers/bundle-url":"lgJ39"}],"hmN7D":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "youtube.c3557793.svg" + "?" + Date.now();
 
+},{"./helpers/bundle-url":"lgJ39"}],"ebj2U":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "hashnode.7fd5bdc8.png" + "?" + Date.now();
+
 },{"./helpers/bundle-url":"lgJ39"}],"9Dt2F":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -28575,6 +28629,14 @@ const Header = ()=>{
             }, void 0, false, {
                 fileName: "src/Components/Header.jsx",
                 lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                href: "#eductaion",
+                children: "Education"
+            }, void 0, false, {
+                fileName: "src/Components/Header.jsx",
+                lineNumber: 28,
                 columnNumber: 7
             }, undefined)
         ]
@@ -28910,6 +28972,132 @@ $RefreshReg$(_c, "Portfolio");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/design-desk.jpeg":"jSSP3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jSSP3":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "design-desk.df4cd0cf.jpeg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
+},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}],"6QZcy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8bef = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8bef.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Education = ({ institutions  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        style: {
+            backgroundColor: "#f4f4f4",
+            padding: "20px",
+            borderRadius: "5px",
+            marginBottom: "20px"
+        },
+        id: "education",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                style: {
+                    fontSize: "24px",
+                    color: "#333",
+                    marginBottom: "15px"
+                },
+                children: "Education"
+            }, void 0, false, {
+                fileName: "src/Components/Education.jsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "education-details",
+                children: institutions.map((institution, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            border: "1px solid #ccc",
+                            borderRadius: "5px",
+                            padding: "10px",
+                            marginBottom: "10px"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                style: {
+                                    fontSize: "18px",
+                                    fontWeight: "bold",
+                                    marginBottom: "5px"
+                                },
+                                children: institution.name
+                            }, void 0, false, {
+                                fileName: "src/Components/Education.jsx",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "16px",
+                                    marginBottom: "3px"
+                                },
+                                children: [
+                                    "Degree: ",
+                                    institution.degree
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Education.jsx",
+                                lineNumber: 29,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "16px",
+                                    marginBottom: "3px"
+                                },
+                                children: [
+                                    "Field of Study: ",
+                                    institution.fieldOfStudy
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Education.jsx",
+                                lineNumber: 30,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                style: {
+                                    fontSize: "16px",
+                                    marginBottom: "3px"
+                                },
+                                children: [
+                                    "Year: ",
+                                    institution.year
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Education.jsx",
+                                lineNumber: 33,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, index, true, {
+                        fileName: "src/Components/Education.jsx",
+                        lineNumber: 17,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/Education.jsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Education.jsx",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Education;
+exports.default = Education;
+var _c;
+$RefreshReg$(_c, "Education");
+
+  $parcel$ReactRefreshHelpers$8bef.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 
 //# sourceMappingURL=index.975ef6c8.js.map
