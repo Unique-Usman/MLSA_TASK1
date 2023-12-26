@@ -27090,12 +27090,12 @@ var _stylesCss = require("./styles.css");
     name: "Usman Akinyemi",
     title: "Linux Lover",
     email: "usmanakinyemi202@gmail.com",
-    gitHub: "https://github.com/Unique-Usman",
+    gitHub: "Unique-Usman",
     instagram: "",
-    linkedIn: "https://www.linkedin.com/in/usman-akinyemi-1689711b3/",
+    linkedIn: "usman-akinyemi-1689711b3/",
     medium: "",
-    twitter: "https://twitter.com/usman_akinyemi",
-    youTube: "Usman Akinyemi"
+    twitter: "usman_akinyemi",
+    youTube: "usmanakinyemi6054"
 };
 const primaryColor = "#4E567E";
 const secondaryColor = "#D2F1E4";
@@ -28632,6 +28632,11 @@ const Home = ({ name , title  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         id: "home",
         className: "min-height",
+        style: {
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center"
+        },
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                 className: "background",
@@ -28639,35 +28644,43 @@ const Home = ({ name , title  })=>{
                 alt: ""
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 30,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 style: {
-                    position: "absolute",
-                    top: "5rem",
-                    left: "2rem",
-                    width: "17rem"
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    width: "17rem",
+                    flexDirection: "column",
+                    color: "white"
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        style: {
+                            textAlign: "center"
+                        },
                         children: name
                     }, void 0, false, {
                         fileName: "src/Components/Home.jsx",
-                        lineNumber: 32,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        style: {
+                            textAlign: "center"
+                        },
                         children: title
                     }, void 0, false, {
                         fileName: "src/Components/Home.jsx",
-                        lineNumber: 33,
+                        lineNumber: 46,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 31,
+                lineNumber: 35,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28680,17 +28693,18 @@ const Home = ({ name , title  })=>{
                     src: (0, _downArrowSvgDefault.default),
                     style: {
                         height: "3rem",
-                        width: "3rem"
+                        width: "3rem",
+                        animation: "1s ease-out 0s 1 slideIn"
                     },
                     alt: imageAltText
                 }, void 0, false, {
                     fileName: "src/Components/Home.jsx",
-                    lineNumber: 36,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Home.jsx",
-                lineNumber: 35,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined)
         ]
@@ -28762,24 +28776,24 @@ const imageAltText = "desktop with books and laptop";
  * links section. Below is a sample, update to reflect links you'd like to highlight.
  */ const projectList = [
     {
-        title: "10 Things To Know About Azure Static Web Apps \uD83C\uDF89",
-        description: "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-        url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i"
+        title: "clearit",
+        description: "Built the command line too that can be use to remove files which is not useful. It differs from other deleting tools as it provide you the interactive opportunity to check the content of a file before deleting the file",
+        url: "https://github.com/Unique-Usman/clearit/blob/main/clearit"
     },
     {
-        title: "Web Development for Beginners",
-        description: "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-        url: "https://github.com/microsoft/web-dev-for-beginners"
+        title: "ConnectToLearn",
+        description: "Work with another teammate on ConnectToLearn which is a platform matches completed courses and interests to propose relevant projects. It suggests ideas based on course performance and curiosity, connecting users with experts for validation and execution guidance.(It is mainly for my college)",
+        url: "https://github.com/Unique-Usman/ConnectToLearn"
     },
     {
-        title: "My Resume Site",
-        description: "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-        url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website"
+        title: "OpenSource Contribution (LLVM Compiler)",
+        description: "I solved an existing problem with the Extract API in Clang. The challenge involved generating accurate JSON files based on specified arguments. I successfully resolved inconsistencies in the attributes for Objective-C properties from the source code. Furthermore, I updated the tests to ensure precise JSON file generation, enhancing the Extract API functionality within Clang.",
+        url: "https://github.com/Unique-Usman/llvm-project/commit/32b53cf9d0c8c0e01ce5b0e7d5c717202a98cdf5"
     },
     {
-        title: "GitHub Codespaces and github.dev",
-        description: "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-        url: "https://www.youtube.com/watch?v=c3hHhRME_XI"
+        title: "DesignIT New Website",
+        description: "I am currently on creating the frontend portion of the new DesignIT website.",
+        url: "https://designit1.netlify.app/"
     }, 
 ];
 const Portfolio = ()=>{
@@ -28794,7 +28808,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 62,
+                lineNumber: 61,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28819,12 +28833,12 @@ const Portfolio = ()=>{
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 65,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 64,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -28843,12 +28857,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 75,
+                                            lineNumber: 74,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 73,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -28856,30 +28870,30 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 77,
+                                        lineNumber: 76,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 73,
+                                lineNumber: 72,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 71,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 63,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 61,
+        lineNumber: 60,
         columnNumber: 5
     }, undefined);
 };
