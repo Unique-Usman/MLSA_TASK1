@@ -27,12 +27,12 @@ const siteProps = {
   name: "Usman Akinyemi",
   title: "Linux Lover",
   email: "usmanakinyemi202@gmail.com",
-  gitHub: "https://github.com/Unique-Usman",
+  gitHub: "Unique-Usman",
   instagram: "",
-  linkedIn: "https://www.linkedin.com/in/usman-akinyemi-1689711b3/",
+  linkedIn: "usman-akinyemi-1689711b3/",
   medium: "",
-  twitter: "https://twitter.com/usman_akinyemi",
-  youTube: "Usman Akinyemi",
+  twitter: "usman_akinyemi",
+  youTube: "usmanakinyemi6054",
 };
 
 const primaryColor = "#4E567E";
