@@ -11,6 +11,7 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import Education from "./Components/Education";
 
 import "./styles.css";
 
@@ -33,16 +34,40 @@ const siteProps = {
   medium: "",
   twitter: "usman_akinyemi",
   youTube: "usmanakinyemi6054",
+  hashNode: "UniqueUsman",
 };
 
 const primaryColor = "#4E567E";
 const secondaryColor = "#D2F1E4";
+
+const educationDetails = [
+  {
+    name: "Plaksha University",
+    degree: "Bachelor of Technology",
+    fieldOfStudy: "Computer Science and Artificial Intelligence",
+    year: "2022-2026",
+  },
+  {
+    name: "University of People",
+    degree: "Bachelor of Science",
+    fieldOfStudy: "Computer Science",
+    year: "2021-2026",
+  },
+  // Add more educational institutions as needed
+  {
+    name: "ALX Africa",
+    degree: "Diploma",
+    fieldOfStudy: "Software Engineering",
+    year: "2022-2024",
+  },
+];
 
 const App = () => {
   return (
     <div id="main">
       <Header />
       <Home name={siteProps.name} title={siteProps.title} />
+      <Education institutions={educationDetails}/>
       <About />
       <Portfolio />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
