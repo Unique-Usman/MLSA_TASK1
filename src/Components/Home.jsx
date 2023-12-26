@@ -26,13 +26,24 @@ const imageAltText = "Cmatrix from my personal terminal";
 
 const Home = ({ name, title }) => {
   return (
-    <section id="home" className="min-height">
+    <section
+      id="home"
+      className="min-height"
+      style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+    >
       <img className="background" src={image} alt="" />
       <div
-        style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "17rem" }}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          width: "17rem",
+          flexDirection: "column",
+          color:"white",
+        }}
       >
-        <h1 style={{ color: "white" }}>{name}</h1>
-        <h2>{title}</h2>
+        <h1 style={{ textAlign: "center"}}>{name}</h1>
+        <h2 style={{ textAlign: "center"}}>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
         <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />

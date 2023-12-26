@@ -31,28 +31,27 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "clearit",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Built the command line too that can be use to remove files which is not useful. It differs from other deleting tools as it provide you the interactive opportunity to check the content of a file before deleting the file",
+    url: "https://github.com/Unique-Usman/clearit/blob/main/clearit",
   },
   {
-    title: "Web Development for Beginners",
+    title: "ConnectToLearn",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Work with another teammate on ConnectToLearn which is a platform matches completed courses and interests to propose relevant projects. It suggests ideas based on course performance and curiosity, connecting users with experts for validation and execution guidance.(It is mainly for my college)",
+    url: "https://github.com/Unique-Usman/ConnectToLearn",
   },
   {
-    title: "My Resume Site",
+    title: "OpenSource Contribution (LLVM Compiler)",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "I solved an existing problem with the Extract API in Clang. The challenge involved generating accurate JSON files based on specified arguments. I successfully resolved inconsistencies in the attributes for Objective-C properties from the source code. Furthermore, I updated the tests to ensure precise JSON file generation, enhancing the Extract API functionality within Clang.",
+    url: "https://github.com/Unique-Usman/llvm-project/commit/32b53cf9d0c8c0e01ce5b0e7d5c717202a98cdf5",
   },
   {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "DesignIT New Website",
+    description: "I am currently on creating the frontend portion of the new DesignIT website.",
+    url: "https://designit1.netlify.app/",
   },
 ];
 
